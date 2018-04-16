@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efeee7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightgreen;
+    text-align: center;
+
+}
+
+.nav {
+    
+}
