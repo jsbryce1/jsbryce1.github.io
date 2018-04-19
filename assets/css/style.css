@@ -1,9 +1,15 @@
 * {
     box-sizing: border-box;
 }
+html {
+     min-width: 100%;
+     min-height: 100%;
+     background-position: top center;
+    
+}
 
 body {
-
+    background: url("../../assets/images/paper.jpg");
     font-size: 18px;
     line-height: 34px;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +22,26 @@ body {
     margin: 0 auto;
     clear: both;
 }
+h1, h2, h3, p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: 700;
+color: rgba(133, 128, 128, 0.897);
+}
+
+p:last-child {
+margin-bottom: 0;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 20px;
+}
+h2, h3 {
+    font-size: 22px;
+}
+
 
 /*header*/
 
@@ -66,6 +92,42 @@ border-left: 0 none;
 
 /* main*/
 #main-container {
+   height: 880px;
     padding-top: 130px;
+    width: 1000px;
 }
-.main-section
+
+.legit {
+    background: #fff;
+    padding: 30px;
+    height: 700px;
+    width: 200%;
+    max-width: 800px;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    position: relative;
+    left: 100px;
+}
+
+
+
+
+.img-jared {
+width: 200px;
+height: 200px;
+margin-top: 10px;
+margin-right: 25px;
+float: left;
+}
+
+footer{
+    clear: both;
+    overflow: auto;
+    background: #666;
+    color: #fff;
+    padding: 30px;
+    border-top: 8px solid #4aaaa5;
+    color: #ccc;
+    text-align: center;
+}
