@@ -20,13 +20,21 @@ body {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+
     clear: both;
 }
+
+
+
 h1, h2, h3, p {
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: 700;
 color: rgba(133, 128, 128, 0.897);
 }
+
+h1{
+    color: #4aaaa5;
+} 
 
 p:last-child {
 margin-bottom: 0;
@@ -56,7 +64,7 @@ h2, h3 {
     width: 100%;
 }
 
-#name {
+#my-name {
     width: 250px;
     height: 90px;
     background: #4aaaa5;
@@ -68,6 +76,7 @@ h2, h3 {
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
+    color: #ffffff;
     
 
 
@@ -100,14 +109,14 @@ border-left: 0 none;
 .legit {
     background: rgb(252, 250, 250);
     padding: 30px;
-    height: 700px;
+    height: 600px;
     width: 200%;
     max-width: 1000px;
     float: left;
     border: 1px solid rgb(216, 214, 214);
     margin: 0 auto;
-    position: relative;
-    left: 100px;
+
+
 }
 
 .img-jared  {
@@ -131,9 +140,61 @@ footer{
     text-align: center;
 }
 
+/*Contact Link */
+
+#input-text ul {
+    margin-bottom: 20px;
+}
+
+#input-text li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    border: 1px soild #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
 /*Portfolio Link*/
 
-.work {
+
+.portfolio-section {
+     background: rgb(252, 250, 250);
+     padding: 80px;
+     width: 220%;
+     max-width: 960px;
+     float: left;
+     border: 1px solid rgb(216, 214, 214);
+
+
+}
+
+.ports {
     width: 274px;
     overflow: auto;
     position: relative;
@@ -141,18 +202,18 @@ footer{
     margin: 20px 0 25px;
 }
 
-.work:nth-child(even) {
+.ports:nth-child(even) {
     margin-right: 40px;
-    margin 
+
 }
 
-.work img {
+.ports img {
     width: 100%;
     border: 0 none;
     opacity: .8;
 }
 
-.work h3 {
+.ports h3 {
     border-bottom: 0;
     background: #4aaaa5;
     color: #fff;
@@ -168,47 +229,6 @@ footer{
 
 }
 
-/*Contact Link */
 
-
-#contact-form ul {
-    margin-bottom: 20px;
-}
-
-#contact-form li {
-    margin-bottom: 10px;
-}
-
-label,
-input[type=text],
-input[type=email],
-textarea {
-    display: block;
-    width: 100%;
-}
-
-
-input[type=text],
-input[type=email],
-textarea {
-height: 35px;
-    border: 1px soild #ddd;
-    padding: 0 10px;
-    font-size: 14px;
-
-}
-
-textarea{
-    height: 200px;
-}
-input[type=submit] {
-    background: #4aaaa5;
-    border: 0 none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 30px;
-    cursor: pointer;
-
-}
 
 
