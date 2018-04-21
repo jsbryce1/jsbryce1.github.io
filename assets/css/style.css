@@ -1,6 +1,11 @@
+/* css styling page for portfolio */
+
+
+/* this element defines how the width and height of an element are calculated */
 * {
     box-sizing: border-box;
 }
+
 html {
      min-width: 100%;
      min-height: 100%;
@@ -13,53 +18,48 @@ body {
     font-size: 18px;
     line-height: 34px;
     font-family: Arial, Helvetica, sans-serif;
-    color: 7777;
+    color: #777777;
 }
 
 .links{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-
     clear: both;
 }
-
-
-
+/* Changes the color when hovering over navigation links*/
+a:hover {
+    color: #4aaaa5;
+}
+/* these selector's are used to color and style nav fonts*/
 h1, h2, h3, p {
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-weight: 700;
-color: rgba(133, 128, 128, 0.897);
+color: #777777;
 }
 
 h1{
     color: #4aaaa5;
 } 
 
-p:last-child {
-margin-bottom: 0;
-}
-
 h1 {
     font-size: 30px;
     line-height: 49px;
-    border-bottom: 3px solid #ddd;
+    border-bottom: 3px solid #cccccc;
     padding-bottom: 20px;
+   
 }
 h2, h3 {
     font-size: 22px;
 }
-
-
-/*header*/
-
+/* these selectors are used for formatting and styling the naviagtion bar and fonts */
 #navi {
     background: #ffffff;
     margin: 0 0 30px;
     z-index: 99;
     color: #ffffff;
     overflow: auto;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #cccccc;
     position: fixed;
     width: 100%;
 }
@@ -72,76 +72,86 @@ h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     line-height: 90px;
-    color: fff;
     font-weight: 700;
     font-size: 30px;
     text-decoration: none;
     color: #ffffff;
-    
-
-
+    border-radius: 10px;
 }
+/* these selectors are used to color, style and format the navigation links */
 nav{
     float: right;
     margin-top: 25px;
 
 }
 nav a {
-    color: #999;
-  text-decoration: none;
+    color: #a69a97;
+    text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid rgba(255, 255, 255, 0.842);
+    border-left: 1px solid #f1f0f1;
     line-height: 18px;
+    padding-left: 14px;
+    margin-left:14px;
 }
 
 nav a:first-child {
 border-left: 0 none;
 }
 
-/* Main Link*/
+/* this selector sets the format for the main container on all pages */
+
 #my-info-box {
    height: 880px;
     padding-top: 130px;
-    width: 1000px;
+    width: 960px;
 }
 
+/* this selector helps arrange/format the content inside the main container on the index.html
+and contact pages */
 .legit {
-    background: rgb(252, 250, 250);
+    background: #ffffff;
     padding: 30px;
     height: 600px;
     width: 200%;
-    max-width: 1000px;
+    max-width: 960px;
     float: left;
-    border: 1px solid rgb(216, 214, 214);
+    border: 1px solid #dddddd;
     margin: 0 auto;
+    border-radius: 10px;
+}
 
-
+p {
+    margin-top: 25px;
 }
 
 .img-jared  {
-width: 200px;
-height: 200px;
-margin-top: 10px;
-margin-right: 25px;
-float: left;
+    width: 200px;
+    height: auto;
+    margin: 25px 25px 0px 0px;
+    border-radius: 10px;
+    float: left;
 }
-
-
 
 footer{
     clear: both;
     overflow: auto;
-    background: rgb(105, 105, 105);
-    color: rgb(253, 252, 252);
-    padding: 30px;
-    border-top: 8px solid #47a39f;
-    color: rgb(204, 203, 203);
+    background: #666666;
+    color: #777777;
+    border-top: 8px solid #4aaaa5;
+    color: #cccccc;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
     text-align: center;
 }
 
-/*Contact Link */
 
+/* Contact page selectors */
+
+/* these selectors set the spacing for the input elements in the container */
 #input-text ul {
     margin-bottom: 20px;
 }
@@ -149,7 +159,7 @@ footer{
 #input-text li {
     margin-bottom: 10px;
 }
-
+/* these selectors style and format our input elements */
 label,
 input[type=text],
 input[type=email],
@@ -162,7 +172,7 @@ input[type=text],
 input[type=email],
 textarea {
     height: 35px;
-    border: 1px soild #ddd;
+    border: 1px soild #dddddd;
     padding: 0 10px;
     font-size: 14px;
 }
@@ -174,24 +184,22 @@ textarea {
 input[type=submit] {
     background: #4aaaa5;
     border: 0 none;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     padding: 10px 30px;
     cursor: pointer;
 }
 
-/*Portfolio Link*/
-
+/* Portfolio page selectors */
 
 .portfolio-section {
-     background: rgb(252, 250, 250);
-     padding: 80px;
-     width: 220%;
-     max-width: 960px;
-     float: left;
-     border: 1px solid rgb(216, 214, 214);
-
-
+    background: #ffffff;
+    padding: 30px;
+    max-width: 960px;
+    float: left;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    
 }
 
 .ports {
@@ -204,29 +212,30 @@ input[type=submit] {
 
 .ports:nth-child(even) {
     margin-right: 40px;
-
 }
 
 .ports img {
     width: 100%;
     border: 0 none;
     opacity: .8;
+     border-radius: 10px;
 }
 
 .ports h3 {
     border-bottom: 0;
     background: #4aaaa5;
-    color: #fff;
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 21px;
     padding: 15px;
     width: 100%;
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 300;
-
-
+    opacity: .7;        
+}
+.ports h3 {
+       color: #ffffff;
 }
 
 
