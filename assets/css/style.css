@@ -1,16 +1,15 @@
 /* css styling page for portfolio */
 
-
 /* this element defines how the width and height of an element are calculated */
+
 * {
     box-sizing: border-box;
 }
 
 html {
-     min-width: 100%;
-     min-height: 100%;
-     background-position: top center;
-    
+    min-width: 100%;
+    min-height: 100%;
+    background-position: top center;
 }
 
 body {
@@ -21,38 +20,48 @@ body {
     color: #777777;
 }
 
-.links{
+.links {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
 }
+
+/*#### NAVIGATION ###*/
+
 /* Changes the color when hovering over navigation links*/
+
 a:hover {
     color: #4aaaa5;
 }
-/* these selector's are used to color and style nav fonts*/
-h1, h2, h3, p {
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: 700;
-color: #777777;
-}
 
-h1{
-    color: #4aaaa5;
-} 
+/* these selector's are used to color and style nav fonts*/
+
+h1,
+h2,
+h3,
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #777777;
+}
 
 h1 {
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #cccccc;
     padding-bottom: 20px;
-   
+    color: #4aaaa5;
 }
-h2, h3 {
+
+h2,
+h3 {
     font-size: 22px;
 }
+
+/*#### NAVIGTION BAR ###
 /* these selectors are used for formatting and styling the naviagtion bar and fonts */
+
 #navi {
     background: #ffffff;
     margin: 0 0 30px;
@@ -78,12 +87,14 @@ h2, h3 {
     color: #ffffff;
     border-radius: 10px;
 }
+
 /* these selectors are used to color, style and format the navigation links */
-nav{
+
+nav {
     float: right;
     margin-top: 25px;
-
 }
+
 nav a {
     color: #a69a97;
     text-decoration: none;
@@ -92,24 +103,30 @@ nav a {
     border-left: 1px solid #f1f0f1;
     line-height: 18px;
     padding-left: 14px;
-    margin-left:14px;
+    margin-left: 14px;
 }
 
 nav a:first-child {
-border-left: 0 none;
+    border-left: 0 none;
 }
+
+/*### MAIN CONTAINER 
+---------------------*/
 
 /* this selector sets the format for the main container on all pages */
 
-#my-info-box {
-   height: 880px;
+#main-container {
+    height: 880px;
     padding-top: 130px;
     width: 960px;
 }
 
+/* ### Index.html and contact.html MAIN SECTION */
+
 /* this selector helps arrange/format the content inside the main container on the index.html
 and contact pages */
-.legit {
+
+.main-section {
     background: #ffffff;
     padding: 30px;
     height: 600px;
@@ -125,7 +142,7 @@ p {
     margin-top: 25px;
 }
 
-.img-jared  {
+.img-jared {
     width: 200px;
     height: auto;
     margin: 25px 25px 0px 0px;
@@ -133,7 +150,7 @@ p {
     float: left;
 }
 
-footer{
+footer {
     clear: both;
     overflow: auto;
     background: #666666;
@@ -148,10 +165,10 @@ footer{
     text-align: center;
 }
 
-
-/* Contact page selectors */
+/* ### Contact page selectors */
 
 /* these selectors set the spacing for the input elements in the container */
+
 #input-text ul {
     margin-bottom: 20px;
 }
@@ -159,7 +176,9 @@ footer{
 #input-text li {
     margin-bottom: 10px;
 }
+
 /* these selectors style and format our input elements */
+
 label,
 input[type=text],
 input[type=email],
@@ -190,7 +209,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* Portfolio page selectors */
+/* ### Portfolio page selectors */
 
 .portfolio-section {
     background: #ffffff;
@@ -199,7 +218,6 @@ input[type=submit] {
     float: left;
     border: 1px solid #dddddd;
     border-radius: 10px;
-    
 }
 
 .ports {
@@ -210,15 +228,24 @@ input[type=submit] {
     margin: 20px 0 25px;
 }
 
+/* this selector selector matches every element 
+that is the nth child, regardless of type, of its parent. */
+
 .ports:nth-child(even) {
     margin-right: 40px;
 }
+
+/* these selectors style and format the portfolio images */
+
+/* I made all the gifs with my phone using an app. 
+    Then transfered them into myimages folder
+    --------------------------------------*/
 
 .ports img {
     width: 100%;
     border: 0 none;
     opacity: .8;
-     border-radius: 10px;
+    border-radius: 10px;
 }
 
 .ports h3 {
@@ -233,9 +260,5 @@ input[type=submit] {
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 300;
-    opacity: .7;        
+    opacity: .7;
 }
-
-
-
-
